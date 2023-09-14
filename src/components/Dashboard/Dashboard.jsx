@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Dashboard = ({ remainingCredit, hours, price, selectedCourse }) => {
     return (
         <div className="bg-white shadow-xl rounded-lg p-4 space-y-4">
-            <h1 className="text-xl text-sky-600 font-bold">Credit Hour Remaining {remainingCredit} hr</h1>
+            <h1 className="text-lg text-sky-600 font-bold">Credit Hour Remaining {remainingCredit} hr</h1>
             <hr />
             <h1 className="text-xl font-bold">Course Name</h1>
             {
