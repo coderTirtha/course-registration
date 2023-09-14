@@ -1,8 +1,9 @@
-# React + Vite
+# Course Registration 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Key Features: 
+- All the courses are dynamically loaded by React Components and data updated by React Hooks
+- As one select any course, the total credit hours and total price updates and Remaining Credit hours decreases 
+- If select button is pressed more than once and total credit hours goes more than 20, It shows a modal alert!
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## State Management: 
+- Here selection is managed by state. When one press the selection button, the event-handler is triggered and it commits a search in the state if the course is added previously or not by Array `find` method! If the course is added previously, it doesn't update any State. Rather, it shows a warning via modal! But if the course is not in the State, it adds the course in the State and updates the `selectedCourse`, `price`, `remainingCredit` and `hours` States respectively. 
