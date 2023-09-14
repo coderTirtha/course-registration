@@ -16,7 +16,7 @@ const Course = ({ course, handleSelection }) => {
                         <p className='flex items-center gap-2 text-lg'><BsCurrencyDollar></BsCurrencyDollar><span className="text-gray-500">Price: {price}</span></p>
                         <p className='flex items-center gap-2 text-lg'><BsBook></BsBook><span className="text-gray-500">Credit: {credit}hr</span></p>
                     </div>
-                    <button onClick={() => handleSelection(course)} className="btn bg-sky-500 w-full">Select</button>
+                    <button onClick={() => handleSelection(course)} className="btn text-white hover:text-black bg-sky-500 w-full">Select</button>
                 </div>
             </div>
         </div>

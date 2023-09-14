@@ -1,8 +1,9 @@
-const Dashboard = ({ hours, price, selectedCourse }) => {
-    let count = 0;
+import PropTypes from 'prop-types';
+
+const Dashboard = ({ remainingCredit, hours, price, selectedCourse }) => {
     return (
         <div className="bg-white shadow-xl rounded-lg p-4 space-y-4">
-            <h1 className="text-xl text-sky-600 font-bold">Credit Hour Remaining 20 hr</h1>
+            <h1 className="text-xl text-sky-600 font-bold">Credit Hour Remaining {remainingCredit} hr</h1>
             <hr />
             <h1 className="text-xl font-bold">Course Name</h1>
             {
@@ -15,5 +16,12 @@ const Dashboard = ({ hours, price, selectedCourse }) => {
         </div>
     );
 };
+
+Dashboard.propTypes = {
+    remainingCredit: PropTypes.number,
+    hours: PropTypes.number,
+    price: PropTypes.number,
+    selectedCourse: PropTypes.array
+}
 
 export default Dashboard;

@@ -5,7 +5,7 @@
         "courseName": "Introduction to C Programming",
         "description": "Comprehensive introduction to the C programming language, covering everything you need to know. Practical examples and hands-on coding exercises.",
         "price": 50,
-        "credit": 5
+        "credit": 1
     },
     {
         "id": "b2c3d4e5f6",
@@ -37,7 +37,7 @@
         "courseName": "Introduction to OOP Python",
         "description": "Explore Object-Oriented Programming (OOP) principles using Python. Hands-on projects and coding exercises for practical experience.",
         "price": 70,
-        "credit": 7
+        "credit": 5
     },
     {
         "id": "f6g7h8i9j0",
