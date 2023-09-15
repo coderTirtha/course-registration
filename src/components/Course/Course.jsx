@@ -17,26 +17,6 @@ const Course = ({ course, handleSelection }) => {
                         <p className='flex items-center gap-2 text-lg'><BsBook></BsBook><span className="text-gray-500">Credit: {credit}hr</span></p>
                     </div>
                     <button onClick={() => handleSelection(course)} className="btn text-white hover:text-black bg-sky-500 w-full">Select</button>
-                    <dialog id="selection-modal" className="modal modal-bottom sm:modal-middle">
-                        <div className="modal-box bg-error text-white">
-                            <p className="py-4">You have already selected this course</p>
-                            <div className="modal-action">
-                                <form method="dialog">
-                                    <button className="btn">Close</button>
-                                </form>
-                            </div>
-                        </div>
-                    </dialog>
-                    <dialog id="credit-modal" className="modal modal-bottom sm:modal-middle">
-                        <div className="modal-box bg-error text-white">
-                            <p className="py-4">You can't select more than 20 credit hours once!</p>
-                            <div className="modal-action">
-                                <form method="dialog">
-                                    <button className="btn">Close</button>
-                                </form>
-                            </div>
-                        </div>
-                    </dialog>
                 </div>
             </div>
         </div>

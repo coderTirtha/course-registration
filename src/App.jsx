@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import Courses from './components/Courses/Courses'
 import Dashboard from './components/Dashboard/Dashboard'
@@ -13,9 +15,9 @@ function App() {
   const handleSelection = (course) => {
     const duplicateSelection = selectedCourse.find(selected => selected.id === course.id);
     if (duplicateSelection) {
-      document.getElementById('selection-modal').showModal();
+      toast("You have already selected this course");
     } else if ((remainingCredit - course.credit) < 0) {
-      document.getElementById('credit-modal').showModal();
+      toast("You don't have enough credit hours!");
     }
     else {
       const newSelection = [...selectedCourse, course];
@@ -29,6 +31,7 @@ function App() {
   return (
     <>
       <Header></Header>
+      <ToastContainer autoClose={2000} draggable={true} />
       <div className='flex flex-col-reverse md:flex-row gap-4'>
         <Courses handleSelection={handleSelection}></Courses>
         <div className='md:w-1/4'>
